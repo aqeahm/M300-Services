@@ -7,7 +7,8 @@ Einleitung allgemein (Erklärungen zum ganzen M300-Projekt)
 Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
 
 ## 20-Infrastruktur
-Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
+![Netzwerkplan](img/ngnix.jpg)
+Wir mussten auf der TBZ-VM, welcher uns zu geteilt wurde, ein Vagrant Container mit einem Webservice bzw. ngnix installieren. Dabei mussten wir die Daten für die Webseite ausserhalb vom Container speichern, damit man die Daten nicht verliert, wenn man das Container löscht `$ vagrant destroy`  und wieder aufsetzt `$ vagrant up`. Dabei hat mein zwei wichtige Dateien. Das erste wäre das Vagrant-File welches für die Installation veranwortlich ist. In diesem File ist beschrieben, welches Image es installieren soll und ein der Pfad zum Provisioning-File zeigt. Das Provisioning-File ist die andere Datei. Das File ist für die Konfiguration des Container verantwortlich bzw. es ist ein Shellskript 
 
 ## 35-Sicherheit 1
 Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
