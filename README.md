@@ -2,18 +2,22 @@
 Einleitung allgemein (Erklärungen zum ganzen M300-Projekt)
 
 # Inhaltsverszeichnis<!-- omit in toc -->
-- [10-Toolumgebungen](#10-toolumgebungen)
-- [20-Infrastruktur](#20-infrastruktur)
+- [Vagrant](#vagrant)
+  - [Vagrant Apache2](#vagrant-apache2)
+  - [Vagrant Ngnix](#vagrant-ngnix)
 - [35-Sicherheit 1](#35-sicherheit-1)
 - [30-Container](#30-container)
 - [35-Sicherheit 2](#35-sicherheit-2)
 - [40-Container-Orchestrierung](#40-container-orchestrierung)
 - [50-Add-ons](#50-add-ons)
 - [60-Reflexion](#60-reflexion)
-## 10-Toolumgebungen 
-Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
 
-## 20-Infrastruktur
+## Vagrant
+
+### Vagrant Apache2
+
+
+### Vagrant Ngnix
 ![Netzwerkplan](img/ngnix.jpg)
 Wir mussten auf der TBZ-VM, welcher uns zu geteilt wurde, ein Vagrant Container mit einem Webservice bzw. ngnix installieren. Dabei mussten wir die Daten für die Webseite ausserhalb vom Container speichern, damit man die Daten nicht verliert, wenn man das Container löscht `$ vagrant destroy`  und wieder aufsetzt `$ vagrant up`. Dabei hat mein zwei wichtige Dateien. Das erste wäre das Vagrant-File welches für die Installation veranwortlich ist. In diesem File ist beschrieben, welches Image es installieren soll und ein der Pfad zum Provisioning-File zeigt. Das Provisioning-File ist die andere Datei. Das File ist für die Konfiguration des Container verantwortlich bzw. es ist ein Shellskript 
 
