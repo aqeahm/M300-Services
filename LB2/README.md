@@ -61,16 +61,25 @@ Starten Sie den WordPress-Container mit dem folgenden Befehl:
 `sudo docker run --name my-wordpress -p 8080:80 --link my-db:mysql -d wordpress`
 
 #### Beenden der Installation in einem Browser
+bild
+
 
 ### Images
+erklärung
 #### Docker HUB
+beschreibung
 ##### Account erstellen
+bild
 ##### `Docker login`
-
+bild 
 #### Repositories erstellen
-#### Images erstellen
-#### Images auf Repo pushen
+bild
 
+
+#### Images erstellen
+sudo docker commit -m "Added MySQL Login data and Website installation skip" -a "Abi and Aqeb" my-wordpress aqeahm/wordpress:1.0
+#### Images auf Repo pushen
+sieht man in repo
 
 
 ## Testing
