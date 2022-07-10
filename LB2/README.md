@@ -17,6 +17,7 @@ Einleitung zum LB2 Projekt (Erklärungen)
     - [Images erstellen](#images-erstellen)
     - [Images auf Repo pushen](#images-auf-repo-pushen)
 - [Testing](#testing)
+- [Troubleshooting](#troubleshooting)
 - [Fazit](#fazit)
   - [Aqeb Ahmed:](#aqeb-ahmed)
   - [Abi Kani:](#abi-kani)
@@ -87,6 +88,11 @@ sieht man in repo
 |---|---|---|---|
 | --- | --- | --- | <img src="./images/testing1.png"/> |
 
+## Troubleshooting
+https://stackoverflow.com/questions/50151833/cannot-login-to-docker-account
+
+
+
 ## Fazit 
 ### Aqeb Ahmed:
 gbswdgoh
@@ -98,3 +104,8 @@ ouagudgio
 ## Quellen
 1. https://www.ionos.de/digitalguide/server/knowhow/wordpress-in-docker-containern/
 2. https://itler.net/mysql-befehle-uebersicht-die-wichtigsten-datenbank-kommandos-ueber-die-konsole/
+3. https://www.ionos.de/digitalguide/server/knowhow/einrichten-eines-docker-repository/
+4. https://docs.docker.com/engine/reference/commandline/login/
+5. https://www.ionos.de/digitalguide/server/knowhow/docker-images-erstellen/
+
+
