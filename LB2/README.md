@@ -119,7 +119,7 @@ In unserem Beispiel werden wir diesen Befehl verwenden:
 ## Testing
 | Beschreibung  | SOLL | IST | Beweis |
 |---|---|---|---|
-| --- | --- | --- | <img src="./images/testing1.png"/> |
+| Images von Docker HUB herunterladen | Es sollte das Image herunterladen ohne welche Probleme | Das Image wurde ohne welche Probleme herunterladen | <img src="./images/testing1.png"/> |
 | --- | --- | --- | <img src="./images/testing2.png"/> |
 
 ## Fazit 
