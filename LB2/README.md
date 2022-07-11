@@ -117,10 +117,12 @@ In unserem Beispiel werden wir diesen Befehl verwenden:
 
 
 ## Testing
-| Beschreibung  | SOLL | IST | Beweis |
+| Beschreibung  | SOLL | IST | Beweis/Fehler |
 |---|---|---|---|
 | Images von Docker HUB herunterladen | Es sollte das Image herunterladen ohne welche Probleme | Das Image wurde ohne welche Probleme herunterladen | <img src="./images/testing1.png"/> |
-| --- | --- | --- | <img src="./images/testing2.png"/> |
+| Starten von MySQL-Container | Der MySQL-Container sollte mit dem angebenen Hostnamen (my-db) und dem heruntergeladenen Image (aqeahm/db-for-wordpress) gestartet werden. | Es ist auch mit dem angebenen Hostnamen und dem heruntergeladenen Images gestartet | <img src="./images/testing2.png"/> |
+| Starten von Wordpress-Container | Der Wordpress-Container sollte mit dem angebenen Hostnamen (my-wordpress) und dem heruntergeladenen Image (aqeahm/wordpress) gestartet werden. | Leider hat es nicht ganz geklappt wie geplant. Es kam die folgende Fehlermeldung. | `AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.3. Set the 'ServerName' directive globally to suppress this message` |
+
 
 ## Fazit 
 ### Aqeb Ahmed:
@@ -146,5 +148,6 @@ Danke vielmals für diese Zeit, falls Sie das lesen, Herr Calisto! Oder besser g
 3. https://www.ionos.de/digitalguide/server/knowhow/einrichten-eines-docker-repository/
 4. https://docs.docker.com/engine/reference/commandline/login/
 5. https://www.ionos.de/digitalguide/server/knowhow/docker-images-erstellen/
+6. https://www.redhat.com/de/topics/containers/what-is-docker
 
 
