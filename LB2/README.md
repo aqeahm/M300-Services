@@ -80,20 +80,20 @@ erklärung
 
 
 ##### Account erstellen
-Um zu beginnen, müssen Sie ein Docker-Hub-Konto einrichten. Füllen Sie Ihre Kontodaten auf der <a href="http://hub.docker.com/"> Hauptseite von Docker Hub </a> aus und klicken Sie auf Anmelden.
+Um zu beginnen, müssen Sie ein Docker-Hub-Konto einrichten. Füllen Sie Ihre Kontodaten auf der <a href="http://hub.docker.com/"> Hauptseite von Docker Hub </a> aus und klicken Sie auf Anmelden.<br />
 <img src="./images/dockeracc2.png"/>
-Überprüfen Sie Ihr E-Mail-Konto auf eine Nachricht, um Ihre Kontoaktivierung abzuschließen, und melden Sie sich dann bei der Website an.
-<img src="./images/dockeracc1.png"/>
-Jedes Docker-Hub-Konto kann eine Reihe von kostenlosen öffentlichen Repositories erstellen. Jedes Konto wird auch mit einem kostenlosen privaten Repository geliefert. Sie können gegen eine monatliche Gebühr weitere private Repositories erwerben.
+Überprüfen Sie Ihr E-Mail-Konto auf eine Nachricht, um Ihre Kontoaktivierung abzuschließen, und melden Sie sich dann bei der Website an.<br />
+<img src="./images/dockeracc1.png"/><br />
+Jedes Docker-Hub-Konto kann eine Reihe von kostenlosen öffentlichen Repositories erstellen. Jedes Konto wird auch mit einem kostenlosen privaten Repository geliefert. Sie können gegen eine monatliche Gebühr weitere private Repositories erwerben.<br />
 
 ##### Repositories erstellen
-<img src="./images/docker2.png"/>
-<img src="./images/docker.png"/>
+<img src="./images/docker2.png"/><br />
+<img src="./images/docker.png"/><br />
 
 ##### $ Docker login
 
     $ docker login
-<img src="./images/dockerhub4.png"/>
+<img src="./images/dockerhub4.png"/><br />
 
 
 
