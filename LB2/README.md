@@ -112,7 +112,10 @@ sieht man in repo
 
 ## Fazit 
 ### Aqeb Ahmed:
-gbswdgoh
+Ich konnte im Thema Container mein Wissen sehr erweitern. Ich bin mir nicht immer noch nicht sattelfest, wie alles im Container funktioniert, doch im Grossen und Ganzen verstanden.
+
+Mit Abi könnte ich auch sehr gut zusammenarbeiten. Es ist nicht unser erstes Projekt zusammen, aber ich finde immer seine vielseitigen Blicke auf das Projekt spannend.  Ich hoffe, dass ich sicherlich wieder einmal mit ihm ein Projekt machen kann und dies auch so erfolgreich wie dieses Projekt abschliesse.
+
 
 ### Abi Kani:
 ouagudgio
