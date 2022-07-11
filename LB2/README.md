@@ -73,8 +73,6 @@ Bei der Installation haben wir folgendes ausgewählt.
 
 
 ### Images erstellen und auf Docker HUB hochladen
-erklärung
-
 #### Account erstellen
 Um zu beginnen, müssen Sie ein Docker-Hub-Konto einrichten. Füllen Sie Ihre Kontodaten auf der <a href="http://hub.docker.com/"> Hauptseite von Docker Hub </a> aus und klicken Sie auf Anmelden.<br />
 <img src="./images/dockeracc2.png"  style="width:500px;"/><br />
