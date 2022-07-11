@@ -1,5 +1,6 @@
 # Einleitung <!-- omit in toc -->
-Einleitung zum LB2 Projekt (Erklärungen)
+Der Auftrag der LB2 ist es eine Container Umgebung zu realisieren, bei der ein Image Datei erstellt wird, welche man in den Dockerhub uploaded. 
+Diese Image wird dann schlussendlich vom Dockerhup gepullt, sodass man eine VM starten kann bei der alles nach der Imagedatei installiert wird.
 
 # Inhaltsverszeichnis <!-- omit in toc -->
 - [Service-Aufbau](#service-aufbau)
@@ -87,17 +88,31 @@ Jedes Docker-Hub-Konto kann eine Reihe von kostenlosen öffentlichen Repositorie
 #### $ Docker login
 Damit man die Images später hochladen kann muss man den Docker HUB Account mit dem Docker verbunden sein. Dafür müssen wir den folgenden Befehl eingeben.
     $ docker login
-Nach dem Befehl müssen wir die Docker ID eingeben und das Passwort, welches wir für das Docker HUB Account eingeben haben. <br/>
+Nach dem Befehl müssen wir die Docker ID eingeben und das Passwort, welches wir für das Docker HUB Account eingeben haben. <br/> <br/>
 Danach sollte die folgende Meldung kommen.
 <img src="./images/dockerhub4.png"/><br />
 
 
 
 #### Images erstellen
+Als nächstes speichern Sie den Container als Image mit dem Befehl docker commit, der die folgende Syntax aufweist:
+<br/> <br/>
 
+     sudo docker commit -m "[build notes]" -a "[creator info]" [container name or ID] [name of image]:[version tag]
+
+- [build notes] = Erstellen Sie Notizen, zum Beispiel eine kurze Erklärung der Änderungen an diesem Image
+- [creator info] = Info über Autor: Ihr Name und (falls zutreffend) Ihre Kontaktdaten
+- [container name or ID] = Diese Informationen finden Sie mit dem Befehl sudo docker ps -a
+- [name of image] =  Geben Sie Ihrem Image einen kurzen, aber anschaulichen Namen (sollte der gleich wie Docker HUB Repositoryname sein)
+- Optional: [version tag] = Die Versionsnummer Ihres Images. Sie können entweder eine Nummer angeben (wie v1, v2, v3, etc.) oder Sie können "latest" verwenden. Wenn Sie den Versions-Tag weglassen, wird "latest" angenommen.
+
+In unserem Beispiel werden wir diesen Befehl verwenden:
+    
     $ sudo docker commit -m "Added MySQL Login data and Website installation skip" -a "Abi and Aqeb" my-wordpress aqeahm/wordpress:1.0
 
 #### Images auf Repo pushen
+
+
     $ docker push aqeahm/wordpress:1.0
 
 
@@ -113,9 +128,16 @@ Ich konnte im Thema Container mein Wissen sehr erweitern. Ich bin immer noch nic
 
 Mit Abi könnte ich auch sehr gut zusammenarbeiten. Es ist nicht unser erstes Projekt welches wir zusammen erlungen. Ich hoffe, dass ich sicherlich wieder einmal mit ihm ein Projekt machen kann und dies auch so erfolgreich wie dieses Projekt abschliessen kann.
 
+Beim Projekt hätten wir direkt auf der Wordpress Container den MySQL Datenbank installieren sollen. Damit wird nur eine Container bzw. ein Image als Endprodukt haben. 
+
 
 ### Abi Kani:
-ouagudgio
+Meiner Meinung nach war es von meiner Leistung her eher einer der schlechteren Modulen. 
+Dies lag jedoch überhaupt nicht am Unterricht oder dem behandelten Stoff. Es lag eher am Schulstoff der BMS, da ich dort ein bisschen mehr Gas geben musste, weil es ein bisschen knapp wurde.
+Die Themen, die wir in der Schule angeschaut hatten, fand ich spannend. Vorallem auch der Aufbau der Images und Container. Was man alles mit Container-Umgebungen aufbauen konnte, fand ich relativ faszinierend. Das eine kleine Automatisierung, soviel verändern kann, erstaunt mich. Ich finde es sehr schade, dass dies leider unser letztes Modul
+bei Herr Calisto ist, bei dem ich in den letzten 3 Jahren sehr viel an Wissen aufgebaut habe und bei dem Ich in meiner Schulzeit mit Abstand am meisten Spass am Unterricht hatte. Die Art und Weise des Unterrichts sollten einige Lehrer übernehmen, welche einen spannenden und unterhaltsamen Unterricht haben möchten.
+Jetzt sind die 3 Jahre schon vorbei und es ging um einiges schneller als es mir lieb war.
+Danke vielmals für diese Zeit, falls Sie das lesen, Herr Calisto! Oder besser gesagt "Cello"!
 
 
 ## Quellen
