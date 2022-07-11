@@ -120,15 +120,15 @@ In unserem Beispiel werden wir diesen Befehl verwenden:
 | Beschreibung  | SOLL | IST | Beweis |
 |---|---|---|---|
 | --- | --- | --- | <img src="./images/testing1.png"/> |
-
+| --- | --- | --- | <img src="./images/testing2.png"/> |
 
 ## Fazit 
 ### Aqeb Ahmed:
 Ich konnte im Thema Container mein Wissen sehr erweitern. Ich bin immer noch nicht sattelfest, was das Thema angeht,doch im Grossen und Ganzen habe ich es verstanden.
 
-Mit Abi könnte ich auch sehr gut zusammenarbeiten. Es ist nicht unser erstes Projekt welches wir zusammen erlungen. Ich hoffe, dass ich sicherlich wieder einmal mit ihm ein Projekt machen kann und dies auch so erfolgreich wie dieses Projekt abschliessen kann.
+Mit Abi könnte ich auch sehr gut zusammenarbeiten. Es ist nicht unser erstes Projekt welches wir zusammen erledigen. Ich hoffe, dass ich sicherlich wieder einmal mit ihm ein Projekt machen kann.
 
-Beim Projekt hätten wir direkt auf der Wordpress Container den MySQL Datenbank installieren sollen. Damit wird nur eine Container bzw. ein Image als Endprodukt haben. 
+Beim Projekt hätten wir direkt auf der Wordpress Container den MySQL Datenbank installieren sollen. Damit wird nur eine Container bzw. ein Image als Endprodukt haben. Doch leider hat es am Schluss nicht alles gerreicht um ein Docker Image für das Wordpress korrekt zu erstellen dies sollte man im Kapitel Testing sehen. 
 
 
 ### Abi Kani:
