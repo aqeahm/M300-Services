@@ -20,11 +20,6 @@ Einleitung allgemein (Erklärungen zum ganzen M300-Projekt)
   - [Image herunterladen](#image-herunterladen)
   - [Container erstellen](#container-erstellen)
   - [Ausführen und Anhalten des Containers](#ausführen-und-anhalten-des-containers)
-- [30-Container](#30-container)
-- [35-Sicherheit 2](#35-sicherheit-2)
-- [40-Container-Orchestrierung](#40-container-orchestrierung)
-- [50-Add-ons](#50-add-ons)
-- [60-Reflexion](#60-reflexion)
 
 ## Vagrant
 
@@ -136,21 +131,6 @@ Wenn wir einen Container zerstören wollen, etwa weil das Bild nicht unseren Anf
 Beachten Sie, dass der obige Befehl das Datenvolumen, das Docker für /var/lib/mysql erstellt hat, nicht zerstört. Wenn Sie das Datenträger ebenfalls zerstören möchten, verwenden Sie:
 
 `docker rm -v mariadbtest`
-
-## 30-Container
-Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
-
-## 35-Sicherheit 2
-Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
-
-## 40-Container-Orchestrierung
-Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
-
-## 50-Add-ons 
-Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
-
-## 60-Reflexion
-Lernprozess festgehalten (Form frei wählbar)
 
 
 - - -

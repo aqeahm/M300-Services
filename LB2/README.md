@@ -9,11 +9,10 @@ Einleitung zum LB2 Projekt (Erklärungen)
     - [MySql Server Container erstellen](#mysql-server-container-erstellen)
     - [Wordpress Container erstellen](#wordpress-container-erstellen)
     - [Beenden der Installation in einem Browser](#beenden-der-installation-in-einem-browser)
-  - [Images](#images)
-    - [Docker HUB](#docker-hub)
-      - [Account erstellen](#account-erstellen)
-      - [Repositories erstellen](#repositories-erstellen)
-      - [$ Docker login](#-docker-login)
+  - [Images erstellen und auf Docker HUB hochladen](#images-erstellen-und-auf-docker-hub-hochladen)
+    - [Account erstellen](#account-erstellen)
+    - [Repositories erstellen](#repositories-erstellen)
+    - [$ Docker login](#-docker-login)
     - [Images erstellen](#images-erstellen)
     - [Images auf Repo pushen](#images-auf-repo-pushen)
 - [Testing](#testing)
@@ -74,23 +73,21 @@ Bei der Installation haben wir folgendes ausgewählt.
 <img src="./images/wordpress5.png"/>
 
 
-### Images
+### Images erstellen und auf Docker HUB hochladen
 erklärung
-#### Docker HUB
 
-
-##### Account erstellen
+#### Account erstellen
 Um zu beginnen, müssen Sie ein Docker-Hub-Konto einrichten. Füllen Sie Ihre Kontodaten auf der <a href="http://hub.docker.com/"> Hauptseite von Docker Hub </a> aus und klicken Sie auf Anmelden.<br />
-<img src="./images/dockeracc2.png"/>
+<img src="./images/dockeracc2.png"/><br />
 Überprüfen Sie Ihr E-Mail-Konto auf eine Nachricht, um Ihre Kontoaktivierung abzuschließen, und melden Sie sich dann bei der Website an.<br />
 <img src="./images/dockeracc1.png"/><br />
 Jedes Docker-Hub-Konto kann eine Reihe von kostenlosen öffentlichen Repositories erstellen. Jedes Konto wird auch mit einem kostenlosen privaten Repository geliefert. Sie können gegen eine monatliche Gebühr weitere private Repositories erwerben.<br />
 
-##### Repositories erstellen
+#### Repositories erstellen
 <img src="./images/docker2.png"/><br />
 <img src="./images/docker.png"/><br />
 
-##### $ Docker login
+#### $ Docker login
 
     $ docker login
 <img src="./images/dockerhub4.png"/><br />
@@ -113,9 +110,9 @@ Jedes Docker-Hub-Konto kann eine Reihe von kostenlosen öffentlichen Repositorie
 
 ## Fazit 
 ### Aqeb Ahmed:
-Ich konnte im Thema Container mein Wissen sehr erweitern. Ich bin mir nicht immer noch nicht sattelfest, wie alles im Container funktioniert, doch im Grossen und Ganzen verstanden.
+Ich konnte im Thema Container mein Wissen sehr erweitern. Ich bin immer noch nicht sattelfest, was das Thema angeht,doch im Grossen und Ganzen habe ich es verstanden.
 
-Mit Abi könnte ich auch sehr gut zusammenarbeiten. Es ist nicht unser erstes Projekt zusammen, aber ich finde immer seine vielseitigen Blicke auf das Projekt spannend.  Ich hoffe, dass ich sicherlich wieder einmal mit ihm ein Projekt machen kann und dies auch so erfolgreich wie dieses Projekt abschliesse.
+Mit Abi könnte ich auch sehr gut zusammenarbeiten. Es ist nicht unser erstes Projekt welches wir zusammen erlungen. Ich hoffe, dass ich sicherlich wieder einmal mit ihm ein Projekt machen kann und dies auch so erfolgreich wie dieses Projekt abschliessen kann.
 
 
 ### Abi Kani:
