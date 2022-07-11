@@ -98,10 +98,11 @@ Jedes Docker-Hub-Konto kann eine Reihe von kostenlosen öffentlichen Repositorie
 
 
 #### Images erstellen
+
     $ sudo docker commit -m "Added MySQL Login data and Website installation skip" -a "Abi and Aqeb" my-wordpress aqeahm/wordpress:1.0
 
 #### Images auf Repo pushen
-sieht man in repo
+    $ docker push aqeahm/wordpress:1.0
 
 
 ## Testing
