@@ -12,12 +12,11 @@ Einleitung zum LB2 Projekt (Erklärungen)
   - [Images](#images)
     - [Docker HUB](#docker-hub)
       - [Account erstellen](#account-erstellen)
-      - [`Docker login`](#docker-login)
-    - [Repositories erstellen](#repositories-erstellen)
+      - [Repositories erstellen](#repositories-erstellen)
+      - [$ Docker login](#-docker-login)
     - [Images erstellen](#images-erstellen)
     - [Images auf Repo pushen](#images-auf-repo-pushen)
 - [Testing](#testing)
-- [Troubleshooting](#troubleshooting)
 - [Fazit](#fazit)
   - [Aqeb Ahmed:](#aqeb-ahmed)
   - [Abi Kani:](#abi-kani)
@@ -29,7 +28,7 @@ Für schnelle kurze Seiten
 
 
 ## Umsetzung
-
+Zuerst werden wir ein MySQL Container und danach ein Wordpress Container aufsetzen. Wenn wir beide Container aufgesetzt haben, werden wir die Wordpress Installation anfangen und konfigurieren. Wenn all dies gemacht ist, erstellen ein Account in Docker hub, Repositories,  Images von den erstellten Container und verbinden den Docker hub Account (Docker login) mit dem Docker. Zum Schluss werden wir die Images hochladen und diese danach testen.
 
 ### Erstellung der Container
 Eine erfolgreiche WordPress-Installation besteht aus drei Elementen:
@@ -45,7 +44,7 @@ Führen Sie zunächst einen Container namens my-db mit dem Root-Passwort mysql-p
 
 Starten Sie einen Container mit dem Befehl:
 
- `$ sudo docker run --name my-db -e MYSQL_ROOT_PASSWORD=db-password -d mysql`
+    $ sudo docker run --name my-db -e MYSQL_ROOT_PASSWORD=db-password -d mysql
 
 #### Wordpress Container erstellen
 Führen Sie als Nächstes einen Container aus dem offiziellen WordPress-Image aus, der dem Host-Port 8080 zugeordnet und mit dem Datenbankcontainer verknüpft ist.
@@ -59,26 +58,48 @@ Der Befehl unterscheidet sich geringfügig, je nachdem, ob Sie MySQL:
 
 Starten Sie den WordPress-Container mit dem folgenden Befehl:
 
-`sudo docker run --name my-wordpress -p 8080:80 --link my-db:mysql -d wordpress`
+    $sudo docker run --name my-wordpress -p 8080:80 --link my-db:mysql -d wordpress
 
 #### Beenden der Installation in einem Browser
-bild
+
+Bei der Installation haben wir folgendes ausgewählt. 
+<img src="./images/wordpress1.png"/>
+
+<img src="./images/wordpress2.png"/>
+
+<img src="./images/wordpress3.png"/>
+
+<img src="./images/wordpress4.png"/>
+
+<img src="./images/wordpress5.png"/>
 
 
 ### Images
 erklärung
 #### Docker HUB
-beschreibung
+
+
 ##### Account erstellen
-bild
-##### `Docker login`
-bild 
-#### Repositories erstellen
-bild
+Um zu beginnen, müssen Sie ein Docker-Hub-Konto einrichten. Füllen Sie Ihre Kontodaten auf der <a href="http://hub.docker.com/"> Hauptseite von Docker Hub </a> aus und klicken Sie auf Anmelden.
+<img src="./images/dockeracc2.png"/>
+Überprüfen Sie Ihr E-Mail-Konto auf eine Nachricht, um Ihre Kontoaktivierung abzuschließen, und melden Sie sich dann bei der Website an.
+<img src="./images/dockeracc1.png"/>
+Jedes Docker-Hub-Konto kann eine Reihe von kostenlosen öffentlichen Repositories erstellen. Jedes Konto wird auch mit einem kostenlosen privaten Repository geliefert. Sie können gegen eine monatliche Gebühr weitere private Repositories erwerben.
+
+##### Repositories erstellen
+<img src="./images/docker2.png"/>
+<img src="./images/docker.png"/>
+
+##### $ Docker login
+
+    $ docker login
+<img src="./images/dockerhub4.png"/>
+
 
 
 #### Images erstellen
-sudo docker commit -m "Added MySQL Login data and Website installation skip" -a "Abi and Aqeb" my-wordpress aqeahm/wordpress:1.0
+    $ sudo docker commit -m "Added MySQL Login data and Website installation skip" -a "Abi and Aqeb" my-wordpress aqeahm/wordpress:1.0
+
 #### Images auf Repo pushen
 sieht man in repo
 
@@ -87,10 +108,6 @@ sieht man in repo
 | Beschreibung  | SOLL | IST | Beweis |
 |---|---|---|---|
 | --- | --- | --- | <img src="./images/testing1.png"/> |
-
-## Troubleshooting
-https://stackoverflow.com/questions/50151833/cannot-login-to-docker-account
-
 
 
 ## Fazit 
