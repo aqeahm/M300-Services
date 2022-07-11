@@ -1,7 +1,6 @@
 # Einleitung <!-- omit in toc -->
 Einleitung zum LB2 Projekt (Erklärungen)
 
-
 # Inhaltsverszeichnis <!-- omit in toc -->
 - [Service-Aufbau](#service-aufbau)
 - [Umsetzung](#umsetzung)
@@ -21,8 +20,8 @@ Einleitung zum LB2 Projekt (Erklärungen)
   - [Abi Kani:](#abi-kani)
 - [Quellen](#quellen)
 
-## Service-Aufbau 
-Eine schnelle Wordpress VM 
+## Service-Aufbau
+Eine schnelle Wordpress VM
 Für schnelle kurze Seiten
 
 
