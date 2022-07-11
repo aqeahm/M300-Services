@@ -88,8 +88,10 @@ Jedes Docker-Hub-Konto kann eine Reihe von kostenlosen öffentlichen Repositorie
 <img src="./images/docker.png"/><br />
 
 #### $ Docker login
-
+Damit man die Images später hochladen kann muss man den Docker HUB Account mit dem Docker verbunden sein. Dafür müssen wir den folgenden Befehl eingeben.
     $ docker login
+Nach dem Befehl müssen wir die Docker ID eingeben und das Passwort, welches wir für das Docker HUB Account eingeben haben. <br/>
+Danach sollte die folgende Meldung kommen.
 <img src="./images/dockerhub4.png"/><br />
 
 
