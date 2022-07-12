@@ -4,6 +4,8 @@ Diese Image wird dann schlussendlich vom Dockerhup gepullt, sodass man eine VM s
 
 # Inhaltsverszeichnis <!-- omit in toc -->
 - [Service-Aufbau](#service-aufbau)
+  - [Docker](#docker)
+  - [Wordpress](#wordpress)
 - [Umsetzung](#umsetzung)
   - [Erstellung der Container](#erstellung-der-container)
     - [MySql Server Container erstellen](#mysql-server-container-erstellen)
@@ -23,9 +25,27 @@ Diese Image wird dann schlussendlich vom Dockerhup gepullt, sodass man eine VM s
 <br/> <br/>
 
 ## Service-Aufbau
-Eine schnelle Wordpress VM
-Für schnelle kurze Seiten
-<br/> <br/>
+<img src="./images/Aufbau.png"/>
+
+Wir möchten gerne 2 Images erstellen, welche eine Testwebseite anzeigt. Dies möchten wir Wordpress und ein Datenbank fürs Wordpress machen. Wir wollen das man unsere Images herunterladen kann und wenn man beide ausführt sollte eine Testwebseite erstellt werden, welche man für z.B. Plugin oder Templates testen kann. Das ganze sollte auf Docker laufe.
+
+### Docker 
+Bei „Docker" handelt es sich um eine Containerisierungstechnologie, die die Erstellung und den Betrieb von Linux-Containern ermöglicht.
+<br/>
+Mit Docker kann man Container wie extrem leichtgewichtige, virtuelle Maschinen behandeln. Und mit diesen Containern erhält man Flexibilität. Man kann sie erstellen, einsetzen, kopieren und zwischen Umgebungen bewegen, was die Ressourcennutzung anpassbar macht. Wenn mehr Leistung benötigt wird, kann diese ganz einfach erhöht werden und falls mehr VMs gebraucht werden, kann man diese Automatisiert mit vorhandendem Image-File erstellen.
+<br/>
+Die Docker-Technologie verwendet den Linux Kernel und seine Funktionen wie Cgroups und namespaces, um Prozesse zu isolieren, damit diese unabhängig voneinander ausgeführt werden können. Diese Unabhängigkeit ist der Zweck der Container – die Fähigkeit, mehrere Prozesse und Apps getrennt voneinander betreiben zu können. So wird Ihre Infrastruktur besser genutzt und gleichzeitig die Sicherheit bewahrt, die sich aus der Arbeit mit getrennten Systemen ergibt.
+<br/>
+Containertools, einschließlich Docker, arbeiten mit einem Image-basierten Bereitstellungsmodell. Das macht es einfacher, eine Anwendung oder ein Paket von Services mit all deren Abhängigkeiten in mehreren Umgebungen gemeinsam zu nutzen. Docker automatisiert außerdem die Bereitstellung der Anwendung (oder Kombinationen von Prozessen, die eine Anwendung darstellen) innerhalb dieser Container-Umgebung.
+
+
+### Wordpress
+Bei WordPress handelt es sich um ein "Open-Source-Content-Management-System. Dies bedeutet, dass jeder die WordPress-Software kostenlos nutzen oder ändern kann. Ein Content-Management-System ist im Grunde ein Tool, mit dem man wichtige Aspekte deiner Webseite, wie z. B. Inhalte, auf einfache Weise verwalten kann, ohne dass man sich mit Programmierung auskennen muss.
+Das Endergebnis ist, dass WordPress das Erstellen einer Webseite für jedermann zugänglich macht,dies auch für Leute, die keine Entwickler sind.<br/>
+Im Kern ist WordPress die einfachste und beliebteste Methode, um eine eigene Webseite oder einen eigenen Blog zu erstellen. Tatsächlich macht WordPress mehr als 43% aller Webseiten im Internet aus
+
+
+ <br/> <br/>
 
 ## Umsetzung
 Zuerst werden wir ein MySQL Container und danach ein Wordpress Container aufsetzen. Wenn wir beide Container aufgesetzt haben, werden wir die Wordpress Installation anfangen und konfigurieren. Wenn all dies gemacht ist, erstellen ein Account in Docker hub, Repositories,  Images von den erstellten Container und verbinden den Docker hub Account (Docker login) mit dem Docker. Zum Schluss werden wir die Images hochladen und diese danach testen.
@@ -133,11 +153,6 @@ Die erstellten Images muss man nur noch auf die Repos hochladen. Dafür müssen 
 Dies sind auch im Repo nachdem Hochladen ersichtlich.
 
 <img src="./images/docker5.png"/>
-
-
-
-
-
 <br/> <br/>
 
 ## Testing
