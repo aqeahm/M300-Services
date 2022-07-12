@@ -1,5 +1,5 @@
 # Einleitung <!-- omit in toc -->
-Der Auftrag der LB2 ist es eine Container Umgebung zu realisieren, bei der ein Image Datei erstellt wird, welche man in den Dockerhub uploaded. 
+Der Auftrag der LB2 ist es eine Container Umgebung zu realisieren, bei der ein Image Datei erstellt wird, welche man in den Dockerhub uploaded. <br/>
 Diese Image wird dann schlussendlich vom Dockerhup gepullt, sodass man eine VM starten kann bei der alles nach der Imagedatei installiert wird.
 
 # Inhaltsverszeichnis <!-- omit in toc -->
